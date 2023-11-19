@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            background-image: none;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .confirmation-message {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .confirmation-message p {
+            margin-bottom: 20px;
+        }
+
+        .confirmation-message button {
+            background-color: #5bc0de;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>Confirmation</title>
+</head>
+<body>
+    <header>
+        <h1>Confirmation</h1>
+    </header>
+
+    <section class="confirmation-message">
+        <p>Are you sure you want to buy this item?</p>
+        <button onclick="confirmPurchase()">Yes, Buy Now</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Online Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function confirmPurchase() {
+            alert("Purchase confirmed! Thank you for shopping with us.");
+        }
+    </script>
+</body>
+</html>
